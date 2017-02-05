@@ -1,0 +1,41 @@
+/*第一部分头部-start*/
+nav {
+  background: #242830;
+  margin-top: -1px;
+  & nav {
+    display: none;
+  }
+  & ul {
+    padding: 0;
+    & li {
+      display: block;
+      color: rgba(255, 255, 255, 0.6);
+      transition: all 0.5s ease;
+      padding-left: 0;
+      position: relative;
+
+      & a {
+        color: rgba(255, 255, 255, 0.5);
+        display: block;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+        padding: 20px 20px 20px 0;
+        transition: all 0.5s ease;
+        position: relative;
+        &:hover, &:focus {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+        }
+        & span {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+    & li:last-child a {
+      border-bottom: 0;
+    }
+  }
+}
+
+/*第一部分头部-end*/
+
