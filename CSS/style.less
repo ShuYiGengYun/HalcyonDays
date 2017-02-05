@@ -2,7 +2,7 @@
 nav {
   background: #242830;
   margin-top: -1px;
-  & nav {
+  & .showToggle {
     display: none;
   }
   & ul {
@@ -13,7 +13,6 @@ nav {
       transition: all 0.5s ease;
       padding-left: 0;
       position: relative;
-
       & a {
         color: rgba(255, 255, 255, 0.5);
         display: block;
@@ -36,6 +35,72 @@ nav {
     }
   }
 }
-
 /*第一部分头部-end*/
+
+
+/*第一部分内容-start*/
+.hero{
+  background: url("../img/hero-bg.jpg") no-repeat center ;
+  background-size: cover;
+  padding: 65px 0 300px 0;
+  height: auto;
+    & .navicon{
+      position: relative;
+      height: 3em;
+      line-height: 3em;
+      & .icon-reorder{
+        width: 35px;
+      }
+    }
+  & .inner{
+    border: 1px solid red;
+    padding: 100px;
+    & h1{
+      display: inline-block;
+      letter-spacing: 10px;
+      font-size: 3em;
+      margin-bottom: 0;
+      & span{
+        border:1px solid red;
+        letter-spacing: 10px;
+        font-size: 1em;
+        color:#a1a9b0;
+      }
+    }
+    & p{
+      border: 1px solid red;
+      letter-spacing: 1px;
+      padding: 10px;
+      color: #8c9308;
+      font-size: 16px;
+      &.delay-05s{
+        animation-delay: 0.5s;
+      }
+
+    }
+  }
+  & .learn-more-btn{
+    display: block;
+    padding: 20px 40px;
+    margin: 0px auto;
+    width: 19em;
+    font-size: 1em;
+    color: rgba(255,255,255,255);
+    background-color:rgba(61,201,179,1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 0 #309383;
+    font-weight: bold;
+    &:hover{
+      transition: all 0.7s;
+      text-decoration: none;
+      background-color:rgba(61,201,179,1);
+      filter:alpha(opacity=30);
+      opacity: 0.5;
+    }
+  }
+}
+
+/*第一部分内容-end*/
 
