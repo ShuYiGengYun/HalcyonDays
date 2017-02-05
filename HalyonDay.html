@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="CSS/font-awesome.css">
     <link rel="stylesheet" href="CSS/Reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animate.css">
     <script src="Scripts/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/navButtonClick.js"></script>
 </head>
 <body>
 <!--第一部分头部-start-->
@@ -20,7 +22,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                    <nav>
+                    <nav class="showToggle">
                         <ul>
                             <li><a href="#">Introduction
                                 <span>
@@ -59,19 +61,33 @@
             </div>
         </div>
     </nav>
-    <section>
+    <section class="hero" id="hero">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">Click</div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-right navicon" style="border: 1px solid red">
+                    <a href="#" class="nav-slide-button" id="nav-toggle">
+                            <span class="nav-icon">
+                                <i class="icon-reorder icon-3x"></i>
+                            </span>
+                    </a>
+                </div>
             </div>
-            <div class="row">b</div>
-            <div class="row">c</div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner" style="border: 1px solid green">
+                    <h1 class="animated  fadeInDown" style="border: 1px solid red">HALCYON<span>DAYS</span></h1>
+                    <p class="animated fadeInUp delay-05s"> An exclusive HTML5/CSS3 freebie by Peter Finlan, for
+                        <em>Codrops</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center ">
+                    <a href="#" class="learn-more-btn">BACK TO THE ARTICLE</a>
+                </div>
+            </div>
         </div>
     </section>
 </header>
 <!--第一部分头部end-->
-
-
-
 </body>
 </html>
