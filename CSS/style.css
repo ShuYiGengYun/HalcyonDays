@@ -1,0 +1,39 @@
+/*第一部分头部-start*/
+nav {
+  background: #242830;
+  margin-top: -1px;
+}
+nav nav {
+  display: none;
+}
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s ease;
+  padding-left: 0;
+  position: relative;
+}
+nav ul li a {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+  padding: 20px 20px 20px 0;
+  transition: all 0.5s ease;
+  position: relative;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+nav ul li a span {
+  position: absolute;
+  right: 0;
+}
+nav ul li:last-child a {
+  border-bottom: 0;
+}
+/*第一部分头部-end*/
