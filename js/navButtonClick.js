@@ -4,9 +4,8 @@
 $(function () {
     $("#nav-toggle").click(function () {
         /*显示导航-start*/
-        $("nav nav").toggleClass("showToggle");
+        $("nav nav").slideToggle("normal").toggleClass("showToggle");
         /*显示导航-end*/
-
 
         /*导航按钮切换-start*/
         var klass = $(this).find("i").attr("class");
@@ -19,7 +18,6 @@ $(function () {
             $(this).find("i").addClass("icon-reorder").removeClass("icon-remove");
         }
         /*导航按钮切换-end*/
-
 
     });
 });
